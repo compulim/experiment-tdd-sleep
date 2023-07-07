@@ -27,8 +27,8 @@ describe('GIVEN: A Promise returned by calling sleep(500)', () => {
 
   test('should not be resolved', () => expect(hasResolved(promise)).resolves.toBe(false));
 
-  // WHEN: 1 second passed.
-  describe('WHEN: 0.5 seconds passed', () => {
+  // WHEN: 0.5 seconds has passed.
+  describe('WHEN: 0.5 seconds has passed', () => {
     beforeEach(() => jest.advanceTimersByTime(500));
 
     // THEN: The promise should be resolved.
